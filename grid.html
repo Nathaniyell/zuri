@@ -1,90 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zuri Grid</title>
-     <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-main{
-display: flex;
-align-items: center;
-justify-content: center;
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-}
-.container {
-    margin-top: 40px;
-    background-color: blue;
-    width: 70%;
-    height: 90vh;
-    padding: 20px;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 20% 20% 20%;
-    grid-template-areas:
-        "a a b"
-        "c d d"
-        "c e e"
-    ;
-    gap: 15px;
-}
+        .link {
+            display: inline-block;
+            padding: 10px;
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
 
-.container .divbox1 {
-    background-color: rgb(233, 42, 42);
-    grid-area: a;
- }
+        }
 
-.container .divbox2 {
-    background-color: orange;
-    grid-area: b;
-   }
+        .link a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 700;
+            background-color: rgb(6, 116, 6);
+            padding: 10px 15px;
+            border: none;
+            border-radius: 10px;
+            font-family: 'Lexend Deca', sans-serif;
+            transition: 1s ease;
+        }
 
-.container .divbox3 {
-    background-color: rgb(27, 110, 27);
-    grid-area: c;
-}
+        .link a:hover {
+            background-color: maroon;
+            color: #fff;
+            border: none;
+            letter-spacing: 7px;
+        }
 
-.container .divbox4 {
-    background-color: lightgrey;
-    grid-area: d;
-}
+        main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
-.container .divbox5 {
-    background-color: purple;
-    grid-area: e;
-}
+        }
 
-@media (max-width: 1007px) {
-    .container {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "a"
-            "b"
-            "c"
-            "d"
-            "e"
-        ;
-       }
+        .container {
+            margin-top: 40px;
+            background-color: rgb(5, 5, 27);
+            width: 60%;
+            height: 80vh;
+            padding: 20px;
+            display: grid;
+            justify-content: center;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas:
+                "a a b"
+                "c d d"
+                "c e e"
+            ;
+            gap: 15px;
+        }
 
-    .container .divbox4 {
-        height: 50%;
-    }
+        .container .divbox1 {
+            background-color: rgb(233, 42, 42);
+            grid-area: a;
 
-    .container .divbox5 {
-        height: 100%;
-        position: relative;
-        top: -40px;
-    }
-}
+        }
+
+        .container .divbox2 {
+            background-color: orange;
+            grid-area: b;
+
+        }
+
+        .container .divbox3 {
+            background-color: rgb(27, 110, 27);
+            grid-area: c;
+
+        }
+
+        .container .divbox4 {
+            background-color: lightgrey;
+            grid-area: d;
+
+        }
+
+        .container .divbox5 {
+            background-color: purple;
+            grid-area: e;
+
+        }
+
+        @media (max-width: 1007px) {
+            .container {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "a"
+                    "b"
+                    "c"
+                    "d"
+                    "e"
+                ;
+            }
+        }
     </style>
 </head>
+
 <body>
+    <div class="link"><a href="index.html">Back</a></div>
     <main>
+
         <div class="container">
             <div class="divbox1"></div>
             <div class="divbox2"></div>
@@ -94,6 +123,7 @@ justify-content: center;
         </div>
 
     </main>
- 
+
 </body>
+
 </html>
