@@ -148,23 +148,24 @@ section {
         width: 100%;
         height: 150%;
         justify-items: center;
+        padding: 50px;
 
     }
 
     .wrapper .box1 {
-        width: 90%;
+        width: 100%;
         height: 100%;
         border-radius: 10px;
     }
 
     .wrapper .box2 {
-        width: 90%;
+        width: 100%;
         height: 100%;
         border-radius: 10px;
     }
 
     .wrapper .box3 {
-        width: 90%;
+        width: 100%;
         height: 100%;
         border-radius: 10px;
     }
@@ -203,6 +204,15 @@ section {
         height: 150%;
 
 
+    }
+    .wrapper .box1{
+        width: 140%;
+    }
+    .wrapper .box2{
+        width: 140%;
+    }
+    .wrapper .box3{
+        width: 140%;
     }
 
     #contents h1 {
